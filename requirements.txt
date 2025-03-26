@@ -1,0 +1,6 @@
+# This file will list all project dependencies
+# Currently no external dependencies are required 
+
+polars>=0.20.5
+numpy>=1.24.0
+pandas>=2.0.0  # for comparison with pandas examples 
