@@ -1,29 +1,26 @@
 # Polars Data Analysis Tutorial
 
-This project demonstrates various data analysis techniques using the Polars library in Python. It includes a comprehensive analysis of a dummy sales dataset with multiple sections covering different aspects of data analysis.
+This project demonstrates various data analysis techniques using Polars, a fast DataFrame library for Python. The script includes several analysis sections:
 
-## Features
-
-- Basic data exploration
-- Time series analysis
-- Product performance analysis
-- Customer segmentation
-- Regional performance analysis
-- Advanced analytics (product affinity)
-- Satisfaction analysis
+1. Basic Data Exploration
+2. Time Series Analysis
+3. Product Analysis
+4. Customer Segmentation
+5. Regional Performance
+6. Advanced Analytics
+7. Satisfaction Analysis
 
 ## Requirements
 
 - Python 3.9+
 - Polars
 - NumPy
-- Pandas (for comparison)
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/polars-analysis-tutorial.git
+git clone https://github.com/fabiodelgiud/polars-analysis-tutorial.git
 cd polars-analysis-tutorial
 ```
 
@@ -35,28 +32,31 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install polars numpy
 ```
 
 ## Usage
 
-Run the script with different sections:
+Run the script with a section number to execute specific analyses:
 
 ```bash
-# Show help and available options
-python sales_analysis.py
+python sales_analysis.py [section_number]
+```
 
-# Run a specific section (1-7)
-python sales_analysis.py 1    # Basic Data Exploration
-python sales_analysis.py 2    # Time Series Analysis
-python sales_analysis.py 3    # Product Analysis
-python sales_analysis.py 4    # Customer Segmentation
-python sales_analysis.py 5    # Regional Performance
-python sales_analysis.py 6    # Advanced Analytics
-python sales_analysis.py 7    # Satisfaction Analysis
+Available options:
+- `1`: Basic Data Exploration
+- `2`: Time Series Analysis
+- `3`: Product Analysis
+- `4`: Customer Segmentation
+- `5`: Regional Performance
+- `6`: Advanced Analytics
+- `7`: Satisfaction Analysis
+- `all`: Run all sections
 
-# Run all sections
-python sales_analysis.py all
+Example:
+```bash
+python sales_analysis.py 4  # Run customer segmentation analysis
+python sales_analysis.py all  # Run all analyses
 ```
 
 ## Project Structure
